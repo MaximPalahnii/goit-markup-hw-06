@@ -9,9 +9,11 @@
   --footer-background-color: #2f303a;
   --timing-funktion: cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 html {
   box-sizing: border-box;
 }
+
 *,
 ::before,
 ::after {
@@ -25,11 +27,13 @@ p {
   margin-top: 0px;
   margin-bottom: 0px;
 }
+
 ul {
   list-style: none;
   padding-left: 0px;
   margin: 0px;
 }
+
 img {
   display: block;
 }
@@ -218,6 +222,10 @@ header a {
 
 .nav-item:not(:last-child) {
   margin-right: 50px;
+}
+
+.nav-link:visited {
+  color: var(--main-text-color);
 }
 
 .nav-linc {
