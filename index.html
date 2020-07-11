@@ -414,11 +414,10 @@
             </li>
           </ul>
         </div>
-        <div class="containt-subscribe">
+        <!-- <div class="containt-subscribe">
           <div class="subscribe-form">
             <p class="subscribe">Подпишитесь на рассылку</p>
           </div>
-          <!-- <div class="footteremail">E-mail</div> -->
           <div class="footbutton">
             <button type="button" class="button main btn-form-footer">
               Подписаться<svg class="sendicon" width="24" height="24">
@@ -426,10 +425,32 @@
               </svg>
             </button>
           </div>
+        </div> -->
+        <div class="subscribe-form">
+          <b class="footer-call">Подпишитесь на рассылку</b>
+          <form>
+            <div class="subscription">
+              <input
+                type="email"
+                name="email"
+                class="email"
+                placeholder="E-mail"
+              />
+              <button
+                type="submit"
+                class="button button-footer btn-form-footer"
+              >
+                <span class="subscriber">Подписаться</span
+                ><svg class="subscriber-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#iconiconsend"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
-    <!-- Модальное окно -->
+    /* modal window */
     <div data-modal class="backdrop is-hidden">
       <div class="modal">
         <a
@@ -492,30 +513,23 @@
             <input
               class="checkbox"
               type="checkbox"
-              value="agreement"
-              name="agreement"
+              value="greement"
+              name="greement"
             />
-            <span class="agree"></span>
+            <span class="confirmation"></span>
             <span
               >Соглашаюсь с рассылкой и принимаю
-              <a class="rules" href="#">Условия договора</a></span
+              <a class="terms" href="#">Условия договора</a></span
             >
           </label>
           <div>
             <button type="submit" class="button modal-button">
-              <span class="subscribe">Отправить</span>
+              <span class="subscriber">Отправить</span>
             </button>
           </div>
         </form>
       </div>
     </div>
-    /* modal window */
-    <!-- <div class="backdrop is-hidden" data-modal>
-      <div class="modal">
-        <h1 class="modal-title">Оставьте свои данные, мы вам перезвоним</h1>
-        <button data-modal-close>Закрыть</button>
-      </div>
-    </div> -->
     <script src="./js/modal.js"></script>
   </body>
 </html>
