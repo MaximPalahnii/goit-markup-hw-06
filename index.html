@@ -414,18 +414,6 @@
             </li>
           </ul>
         </div>
-        <!-- <div class="containt-subscribe">
-          <div class="subscribe-form">
-            <p class="subscribe">Подпишитесь на рассылку</p>
-          </div>
-          <div class="footbutton">
-            <button type="button" class="button main btn-form-footer">
-              Подписаться<svg class="sendicon" width="24" height="24">
-                <use href="./images/sprite.svg#iconiconsend"></use>
-              </svg>
-            </button>
-          </div>
-        </div> -->
         <div class="subscribe-form">
           <b class="footer-call">Подпишитесь на рассылку</b>
           <form>
@@ -436,12 +424,9 @@
                 class="email"
                 placeholder="E-mail"
               />
-              <button
-                type="submit"
-                class="button button-footer btn-form-footer"
-              >
+              <button type="submit" class="button button-footer">
                 <span class="subscriber">Подписаться</span
-                ><svg class="subscriber-icon" width="24" height="24">
+                ><svg class="subscriber-icon" width="27" height="27">
                   <use href="./images/sprite.svg#iconiconsend"></use>
                 </svg>
               </button>
@@ -502,13 +487,21 @@
               <use href="./images/sprite.svg#iconmodal-email-black"></use>
             </svg>
           </label>
-          <textarea
-            class="input-field textarea"
-            name="comment"
-            cols="30"
-            rows="10"
-            placeholder="Комментарий"
-          ></textarea>
+
+          <div class="field-textarea">
+            <textarea
+              class="form-textarea"
+              name="comment"
+              id="comment"
+              cols="30"
+              rows="10"
+              placeholder=" "
+            ></textarea>
+            <label class="form-text" for="comment" name="comment"
+              >Комментарий</label
+            >
+          </div>
+
           <label class="modal-input checkbox-field">
             <input
               class="checkbox"
