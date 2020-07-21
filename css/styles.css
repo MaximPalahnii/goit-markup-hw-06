@@ -785,6 +785,13 @@ footer .social-item:not(:last-child) {
   margin-bottom: 30px;
 }
 
+.coment-input {
+  position: relative;
+
+  display: block;
+  margin-bottom: 30px;
+}
+
 .input-field {
   padding-left: 42px;
   padding-top: 12px;
@@ -836,8 +843,46 @@ footer .social-item:not(:last-child) {
   fill: var(--active-color);
 }
 
-.field-textarea {
-  position: relative;
+.input-textarea {
+  padding-left: 16px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  width: 100%;
+  resize: none;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border-color 250ms var(--timing-funktion);
+}
+
+.input-textfield {
+  position: absolute;
+  top: 10%;
+  left: 16px;
+  transform: translateY(-50%);
+
+  letter-spacing: 0.01em;
+
+  transition: transform 250ms var(--timing-funktion),
+    color 250ms var(--timing-funktion);
+}
+
+.coment-input:focus-within > .input-textarea {
+  outline: none;
+  border-color: var(--active-color);
+}
+
+.coment-input:focus-within > .input-textfield,
+.input-textarea:not(:placeholder-shown) + .input-textfield {
+  transform: translate(-0px, -35px);
+  font-size: 12px;
+  line-height: 1.17px;
+  color: var(--active-color);
+}
+
+.coment-input:focus-within > .modal-icon {
+  fill: var(--active-color);
 }
 
 .form-text {
@@ -862,39 +907,6 @@ footer .social-item:not(:last-child) {
   fill: var(--main-text-color);
   transform: translateY(-50%);
   transition: fill 250ms var(--timing-funktion);
-}
-
-.field-textarea .form-text {
-  position: absolute;
-  top: 21px;
-  left: 16px;
-
-  transform: translateY(-50%);
-  transition: transform 250ms var(--timing-funktion),
-    font-size 250ms var(--timing-funktion);
-}
-
-.form-textarea {
-  border: 1px solid rgba(33, 33, 33, 0.2);
-  border-radius: 4px;
-  width: 100%;
-}
-
-.form-textarea:focus {
-  border-color: var(--active-color);
-  outline: none;
-}
-
-.form-textarea {
-  resize: none;
-  padding: 12px 16px;
-}
-
-.form-textarea:focus + .form-text,
-.form-textarea:not(:placeholder-shown) .form-text {
-  transform: translate(0px, -40px);
-  color: var(--active-color);
-  font-size: 12px;
 }
 
 .modal-button {
